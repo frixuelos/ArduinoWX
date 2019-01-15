@@ -4,7 +4,7 @@
 __NodeMCU (ESP8266) + BME/BMP280__
 ## Wiring
 ![ArduinoWX wiring](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/04/bme_280_esp8266_bb.png?ssl=1)
-> Note that pins can be SCK or SCL, and SDI or SDA.
+> Note that BME/BMP pins can be SCK or SCL, and SDI or SDA.
 ## Setup
 WiFi settings:
 ```
