@@ -10,7 +10,12 @@ WiFi settings:
 ```
 #define WSSID "" // SSID
 #define PASSWD "" // PASSWORD
+IPAddress staticIP(AAA,AAA,A,AAA); // YOUR ESP8266 IP ADDRESS
+IPAddress gateway(BBB,BBB,B,B); // YOUR ROUTER IP ADDRESS
+IPAddress subnet(CCC,CCC,CCC,C); // SUBNET MASK 
 ```
+> If you want to get an automatic IP address, then comment or remove `WiFi.config(staticIP, gateway, subnet, dns);` on `setup()`.
+
 APRS settings:
 ```
 #define CALLSIGN "" // YOUR CALLSIGN (FOR WEATHER STATIONS ADD -13)
@@ -18,5 +23,5 @@ APRS settings:
 #define LATITUDE "" // LATITUDE WITH 4 DIGITS POINT 2 DIGITS
 #define LONGITUDE "" // LONGITUDE WITH 5 DIGITS POINT 2 DIGITS
 ```
-## V1.0
-This version uses deep sleep to increase battery life.
+## V1.1
+This version uses deep sleep to increase battery life and wakes up every 15 minutes.
